@@ -1,17 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ROM>
-  <RomName>Cosmic-OS_gemini_8.1.0</RomName>
-  <VersionName><![CDATA[ Cosmic-OS_Universe_gemini_8.1.0_20180114_3.1-OFFICIAL ]]></VersionName>
-  <VersionNumber type="integer">20180114</VersionNumber>
-  <DirectUrl>https://downloads.sourceforge.net/project/cosmic-os/gemini/Cosmic-OS_Universe_gemini_8.1.0_20180114_3.1-OFFICIAL.zip</DirectUrl>
-  <HttpUrl>https://sourceforge.net/projects/cosmic-os/files/gemini</HttpUrl>
-  <Android>8.1.0</Android>
-  <CheckMD5>dd07405496e85bbcc1c9e8e16d196f2a</CheckMD5>
-  <FileSize type="integer">491002764</FileSize>
-  <Developer>Sebastian</Developer>
-  <WebsiteURL nil="true">cosmic-os.github.io</WebsiteURL>
-  <DonateURL nil="true"/>paypal.me/Cosmic-OS</DonateURL>
-  <Changelog>====================
+====================
      01-14-2018
 ====================
 
@@ -55,5 +42,4 @@ ff0c8ff  Allow faster app switching  [Sebastian]
 9037a2b  Telephony: Don't crash for too long baseband version  [Sebastian]
 9cf383f  Bring 8fcb91d0196a218237b1363c206f4fa739d47783 back to patchset 17  [Sebastian]
 cd4c2c6  base: Introduce SubstratumService  [Sebastian]
-b161ae4  OMS: Add back overlay modified callback implementation  [Sebastian]</Changelog>
-</ROM>
+b161ae4  OMS: Add back overlay modified callback implementation  [Sebastian]
