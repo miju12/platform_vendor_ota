@@ -1,17 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ROM>
-  <RomName>Cosmic-OS_gemini_8.1.0</RomName>
-  <VersionName><![CDATA[ Cosmic-OS_Universe_gemini_8.1.0_20180118_3.1-OFFICIAL ]]></VersionName>
-  <VersionNumber type="integer">20180118</VersionNumber>
-  <DirectUrl>https://downloads.sourceforge.net/project/cosmic-os/gemini/Cosmic-OS_Universe_gemini_8.1.0_20180118_3.1-OFFICIAL.zip</DirectUrl>
-  <HttpUrl>https://sourceforge.net/projects/cosmic-os/files/gemini</HttpUrl>
-  <Android>8.1.0</Android>
-  <CheckMD5>bbe372a087e58253137685afff9a376d</CheckMD5>
-  <FileSize type="integer">490997012</FileSize>
-  <Developer>Sebastian</Developer>
-  <WebsiteURL nil="true">cosmic-os.github.io</WebsiteURL>
-  <DonateURL nil="true"/>paypal.me/Cosmic-OS</DonateURL>
-  <Changelog>====================
+====================
      01-18-2018
 ====================
 
@@ -54,5 +41,5 @@ e215168  Recorder: Use custom transition aar lib  [Sebastian]
 
 ====================
      01-15-2018
-====================</Changelog>
-</ROM>
+====================
+
