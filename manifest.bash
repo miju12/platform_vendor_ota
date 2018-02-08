@@ -13,7 +13,7 @@ function write_xml() {
   echo "  <FileSize type=\"integer\">"$(stat --printf="%s" $OUT/${version}.zip)"</FileSize>"
   echo "  <Developer>$MAINTAINER</Developer>"
   echo "  <WebsiteURL nil=\"true\">cosmic-os.github.io</WebsiteURL>"
-  echo "  <DonateURL nil=\"true\"/>paypal.me/Cosmic-OS</DonateURL>"
+  echo "  <DonateURL>paypal.me/Cosmic-OS</DonateURL>"
   echo "  <Changelog>$CHANGELOG</Changelog>"
   echo "</ROM>"
 }
