@@ -1,17 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ROM>
-  <RomName>Cosmic-OS_gemini_8.1.0</RomName>
-  <VersionName><![CDATA[ Cosmic-OS_Universe_gemini_8.1.0_20180208_3.1-OFFICIAL ]]></VersionName>
-  <VersionNumber type="integer">20180208</VersionNumber>
-  <DirectUrl>https://downloads.sourceforge.net/project/cosmic-os/gemini/Cosmic-OS_Universe_gemini_8.1.0_20180208_3.1-OFFICIAL.zip</DirectUrl>
-  <HttpUrl>https://sourceforge.net/projects/cosmic-os/files/gemini</HttpUrl>
-  <Android>8.1.0</Android>
-  <CheckMD5>f43928e9a7cd2ec5000ece253afc1200</CheckMD5>
-  <FileSize type="integer">499589354</FileSize>
-  <Developer>Sebastian</Developer>
-  <WebsiteURL nil="true">cosmic-os.github.io</WebsiteURL>
-  <DonateURL>paypal.me/Cosmic-OS</DonateURL>
-  <Changelog>====================
+====================
      02-08-2018
 ====================
 
@@ -55,5 +42,4 @@ eca303b  Fix theming  [Sebastian]
    * frameworks/base/
 42a9d05  Fix animateHide not applicable for the arguments  [Sagar Shah]
 f000957  Custom Carrier Label & Carrier Label Placement [1/2]  [Sagar Shah]
-ce45db5  FWB: Statusbar logo position (1/2)  [Sagar Shah]</Changelog>
-</ROM>
+ce45db5  FWB: Statusbar logo position (1/2)  [Sagar Shah]
