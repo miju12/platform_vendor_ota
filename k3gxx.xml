@@ -10,6 +10,6 @@
   <FileSize type="integer">375664130</FileSize>
   <Developer>Rohit Nayak</Developer>
   <WebsiteURL nil="true">cosmic-os.com</WebsiteURL>
-  <DonateURL nil="true"/>
+  <DonateURL>paypal.me/Cosmic-OS</DonateURL>
   <Changelog>*First bring up k3gxx official support</Changelog>
 </ROM>
