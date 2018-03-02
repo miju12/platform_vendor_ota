@@ -1,17 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ROM>
   <RomName>Cosmic-OS_z2_plus_8.1.0</RomName>
-  <VersionName><![CDATA[ Cosmic-OS_Universe_z2_plus_8.1.0_20180219_3.1-OFFICIAL ]]></VersionName>
-  <VersionNumber type="integer">20180219</VersionNumber>
-  <DirectUrl>https://downloads.sourceforge.net/project/cosmic-os/z2_plus/Cosmic-OS_Universe_z2_plus_8.1.0_20180219_3.1-OFFICIAL.zip</DirectUrl>
+  <VersionName><![CDATA[ Cosmic-OS_Universe_z2_plus_8.1.0_20180302_3.1-OFFICIAL.zip]]></VersionName>
+  <VersionNumber type="integer">20180302</VersionNumber>
+  <DirectUrl>https://downloads.sourceforge.net/project/cosmic-os/z2_plus/Cosmic-OS_Universe_z2_plus_8.1.0_20180302_3.1-OFFICIAL.zip</DirectUrl>
   <HttpUrl>https://sourceforge.net/projects/cosmic-os/files/z2_plus</HttpUrl>
   <Android>8.1.0</Android>
-  <CheckMD5>8aa8c87c2d27b61ce66fc68fd580473c</CheckMD5>
-  <FileSize type="integer"></FileSize>
+  <CheckMD5>7dac109c10a90e00a7bb07fb55ca79eb</CheckMD5>
+  <FileSize type="integer">557491970</FileSize>
   <Developer>miju12</Developer>
   <WebsiteURL nil="true">cosmic-os.github.io</WebsiteURL>
   <DonateURL>paypal.me/Cosmic-OS</DonateURL>
   <Changelog>====================
+  
+====================
+     02-09-2018
+====================
+
+   * frameworks/base/
+7265779  Keyguard: Fix black background while screen turning off/on quickly  [Sagar Shah]
+3e23657  SystemUI: fix ambient display when HeadsUp disabled  [Sagar Shah]
+3b63b4c  Quick Settings: Avoid expand indicators shortly showing on edit  [Sagar Shah]
+   * packages/apps/Settings/
+332a4ed  Enable fast scroll for all app list views  [Sagar Shah]
+   * vendor/cos/
+04dde83  Update 3.2  [zeromod]
+   * vendor/ota/
+a5705bd  OTA: Update gemini (08/02/2018)  [zeromod]
+56a0b56  Fix Download Link for all device  [zeromod]
+
+====================
+     02-08-2018
+====================
+
+   * frameworks/base/
+c83ca26  Chinese translation update Thanks @PianCat  [Sebastian]
+   * packages/apps/Galaxy/
+a73d914  Chinese translation fix  [Sebastian]
+3427c3b  Chinese translation update Thanks @PianCat  [Sebastian]
+   * packages/apps/Settings/
+987f621  Chinese translation fix  [Sebastian]
+0bbd2ef  Chinese translation update Thanks @PianCat  [Sebastian]
+   * vendor/ota/
+57a5290  Fix donate tag  [zeromod]
+
+====================
+     02-07-2018
+====================
+
+   * frameworks/base/</Changelog>
+=======
      02-19-2018
 ====================
 
