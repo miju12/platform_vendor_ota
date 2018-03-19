@@ -1,30 +1,255 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ROM>
   <RomName>Cosmic-OS_potter_8.1.0</RomName>
-  <VersionName><![CDATA[ Cosmic-OS_Universe_potter_8.1.0_20180313_3.1-OFFICIAL.zip ]]></VersionName>
-  <VersionNumber type="integer">20180313</VersionNumber>
-  <DirectUrl>https://sourceforge.net/projects/cosmic-os/files/potter/Cosmic-OS_Universe_potter_8.1.0_20180313_3.1-OFFICIAL.zip/download</DirectUrl>
-  <HttpUrl>https://sourceforge.net/projects/cosmic-os/files/potter/Cosmic-OS_Universe_potter_8.1.0_20180313_3.1-OFFICIAL.zip/</HttpUrl>
+  <VersionName><![CDATA[ Cosmic-OS_Universe_potter_8.1.0_20180319_3.1-OFFICIAL.zip ]]></VersionName>
+  <VersionNumber type="integer">20180319</VersionNumber>
+  <DirectUrl>https://sourceforge.net/projects/cosmic-os/files/potter/Cosmic-OS_Universe_potter_8.1.0_20180319_3.1-OFFICIAL.zip/download</DirectUrl>
+  <HttpUrl>https://sourceforge.net/projects/cosmic-os/files/potter/Cosmic-OS_Universe_potter_8.1.0_20180319_3.1-OFFICIAL.zip/</HttpUrl>
   <Android>8.1.0</Android>
-  <CheckMD5>0cf1b168d59f81025624f221566d6a4a</CheckMD5>
-  <FileSize type="integer">514850816</FileSize>
+  <CheckMD5>d7e8ba998f333a9d4ac5a82e20b45d4c</CheckMD5>
+  <FileSize type="integer">545574092</FileSize>
   <Developer>Sri Sandeep</Developer>
   <WebsiteURL nil="true">cosmic-os.github.io</WebsiteURL>
   <DonateURL>paypal.me/Cosmic-OS</DonateURL>
   <Changelog>
+
   ====================
+     03-18-2018
+====================
+
+   * device/motorola/potter/
+a94ac01  potter: add some qcom HALs  [GtrCraft]
+9d5e84e  Revert "potter: enable radio power save"  [GtrCraft]
+fdfc547  potter: sepolicy: Fix moar DTV denials  [GtrCraft]
+   * device/qcom/sepolicy/
+0d79dcf  Revert "sepolicy: Remove definition and labelling of sf_lcd_density_prop"  [anshuman]
+   * frameworks/base/
+52b5a1f71b6  Revert "Modify ClipRectAnimation"  [anshuman]
+fc660bae8be  Modify ClipRectAnimation  [zeromod]
+ae820fb36df  Impliment Android P Transitions.  [zeromod]
+   * hardware/cosmic/interfaces/
+59e934e  Revert "cosmic/interfaces: power: Add lineage HIDL HAL interface"  [anshuman]
+
+====================
+     03-17-2018
+====================
+
+   * hardware/qcom/display/
+1aa43a5fa  msm8974: libexternal should depend on libmedia  [Sam Mortimer]
+ef4ddf0f4  msm8974: libgralloc: Fix adding offset to the mapped base address  [Sam Mortimer]
+   * packages/apps/Galaxy/
+41c1c12  Update PT-BR translation  [Sebastian]
+   * vendor/motorola/potter/
+559a4f8  replace libmmcamera_mot_imx362.so  [Henrique Silva]
+586611c  potter: Use O-MR1 based GPS blobs  [Vachounet]
+4ae193a  potter: Use O-MR1 based display and media blobs  [Vachounet]
+ab3cc51  potter: Update to KPTI patched time blobs  [Vachounet]
+   * vendor/ota/
+bf7d8c2  OTA: Update addison (17/03/2018)  [Sebastian]
+a4ece81  OTA: Update mido (17/03/2018) (#109)  [Sagar Shah]
+
+====================
+     03-16-2018
+====================
+
+   * hardware/qcom/audio/default/
+6ec0a5e1  audio: Make CVD version retrieval nonfatal with ACDB v1  [D. Andrei Măceș]
+   * hardware/qcom/display/
+86a2c326b  msm8974: hwcomposer: Fix regression in hwc_sync  [Sam Mortimer]
+   * vendor/ota/
+841d2be  OTA: Update huashan (16/03/2018)  [Sidharth Soni]
+
+====================
+     03-15-2018
+====================
+
+   * device/motorola/potter/
+0b8178a  potter: shim: transition to TARGET_LD_SHIM_LIBS  [GtrCraft]
+   * frameworks/base/
+8eaad951c53  Fix right padding when using hidden/text battery style  [Sagar Shah]
+   * hardware/qcom/audio-caf/msm8952/
+5dd29ee0  Revert "hal: Fix failure in VtsHalAudioV2_0Target test due to spkr protection"  [Ethan Chen]
+   * packages/apps/Galaxy/
+8bc09b9  galaxy: Fix wrong status_bar_clock string  [Sagar Shah]
+   * vendor/ota/
+d919201  OTA: Update z2_row (15/03/2018) (#107)  [Sagar Shah]
+
+====================
+     03-14-2018
+====================
+
+   * bionic/
+1d932e44f  soong: Add cosmic variable struct  [Sagar Shah]
+   * build/make/
+ee675f11d  soong: pass the qcom hal paths to soong  [Sagar Shah]
+321e6ff96  soong: add new soong variable BoardUsesQTIHardware  [Sagar Shah]
+bd762e837  build: Update sepolicy path  [GitHub]
+2cb98f5e4  soong: include cosmic board flags  [Sagar Shah]
+7766550cb  Revert "soong_config: Add TARGET_HAS_LEGACY_CAMERA_HAL1 variable"  [Sagar Shah]
+bc6c7527d  Revert "soong_config: Add TARGET_USES_MEDIA_EXTENSIONS variable"  [Sagar Shah]
+95474edd2  Revert "soong_config: Add TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS"  [Sagar Shah]
+e228e4576  Revert "core: add support for new soong configs"  [Sagar Shah]
+   * build/soong/
+086e6c6  soong: Include Qualcomm product variables  [Sagar Shah]
+124fb59  soong: handle qcom audio/display/media paths  [Sagar Shah]
+83dbd23  soong: add new linker property qti_whole_static_libs  [Sagar Shah]
+65193d5  IMS: Add Ims Radio Service HAL files to build  [Sagar Shah]
+a386878  soong: Rename our android package to android_cosmic  [Sagar Shah]
+17627df  cleanbuild: add *.zip.md5sum to installclean_files  [Sagar Shah]
+941446b  soong: Add function to return camera parameters library name  [Sagar Shah]
+91acf18  soong: explicitly specify name of Cosmic variables struct  [Sagar Shah]
+e86090c  soong: add support for nested structs in variableProperties  [Sagar Shah]
+e13b3ed  soong: use absolute path for OUT_DIR  [Sagar Shah]
+13f1e02  soong: extend with cosmic board flags  [Sagar Shah]
+   * device/cosmic/sepolicy/
+7d29473  sepolicy: Fix my mismerge  [GitHub]
+795abf1  sepolicy: Adapt with Lineage  [GitHub]
+f7addb2  common: Label sdfat as vfat  [Sagar Shah]
+20d44d1  sepolicy: Cleanup context labelling for external sdcards  [Sagar Shah]
+cf570ab  sepolicy: qcom: Fixing camera app not launching  [Sagar Shah]
+aa86f9d  sepolicy: suppress denial logspam  [Sagar Shah]
+46dd56e  sepolicy: Add policy for vendor.lineage.power HAL  [Sagar Shah]
+d472365  sepolicy: Move exfat, ntfs and fuseblk types to system/sepolicy  [Sagar Shah]
+7155485  qcom: Allow fsck to check /persist  [Sagar Shah]
+b0475d6  sepolicy: allow vold to mount fuse-based sdcard  [Sagar Shah]
+1788e7a  sepolicy: Allow vold to `getattr` on mkfs_exec  [Sagar Shah]
+ee2e40f  sepolicy: fix denials for external storage  [Sagar Shah]
+de5bdfb  sepolicy: treat fuseblk as sdcard_external  [Sagar Shah]
+d64e36c  sepolicy: label exfat and ntfs mkfs executables  [Sagar Shah]
+fe380cc  sepolicy: Add domain for mkfs binaries  [Sagar Shah]
+e33edb2  sepolicy: Set the context for fsck.exfat/ntfs to fsck_exec  [Sagar Shah]
+08d85ac  sepolicy: Fix sysinit denials  [Sagar Shah]
+d9bd4c9  sepolicy: Permissions for userinit  [Sagar Shah]
+f19b08e  sepolicy: allow userinit to set its property  [Sagar Shah]
+d2d7c90  sepolicy: Add policy for sysinit  [Sagar Shah]
+9c70694  sepolicy: qcom: add persist_block_device type  [Sagar Shah]
+c1ecef4  sepolicy: Allow apps to read battery status  [Sagar Shah]
+c6047e0  sepolicy: Move fingerprint 2.0 service out of private sepolicy  [Sagar Shah]
+8e7c93d  Allow zygote to create cgroups files  [Sagar Shah]
+420cff9  sepolicy: Use custom ADB over network property  [Sagar Shah]
+ddc666e  sepolicy: Fix permissions for service.adb.tcp.port  [Sagar Shah]
+bbfd0f9  sepolicy: Allow SystemServer to set service.adb.tcp.* properties  [Sagar Shah]
+e3dffcd  qcom: sepolicy: Add sepolicy for hidl power hal  [Sagar Shah]
+3b9b2a9  sepolicy: Include platform specific sepolicy  [Sagar Shah]
+41f9ad2  sepolicy: Allow platform app to find nfc service  [Sagar Shah]
+c9ce028  sepolicy: Update fingerprint-2.0 service path  [Sagar Shah]
+890ca85  sepolicy: common: Add a label for fingerprint 2.0 -> 2.1 service  [Sagar Shah]
+f381fee  sepolicy: Initial repo structure  [Sagar Shah]
+   * frameworks/av/
+3323da9a2  soong: Add cosmic variable struct  [Sagar Shah]
+574ad7a1c  camera: Workaround for GCC-compiled HAL3 drivers  [Sagar Shah]
+0122588dd  camera: bring back CAMERA_PARAMETERS_EXTRA  [Sagar Shah]
+aeac3bedb  camera: Allow devices to load custom CameraParameter code  [Sagar Shah]
+   * frameworks/base/
+65b98178a09  Add roaming icon to statusbar blacklist  [Sagar Shah]
+b3bae540cbc  base: SystemUI: add VPN to the icon blacklist in tuner  [Sagar Shah]
+6eb581fdf1d  Revert "Hidden battery style: fixes and improvements"  [Sagar Shah]
+dafa1765db2  Ambient: show battery level on bottom  [Sagar Shah]
+ee93b97d2fa  Fix clock disappearing in the QS panel  [Sagar Shah]
+71185c5ab5a  Clock: Fix crash in formatted string with date on right  [Sagar Shah]
+30bc841271f  Clock date position [1/2]  [Sagar Shah]
+3c2dd55e24b  Revert "Clock: Fix crash in formatted string with date on right"  [Sagar Shah]
+c5cfa4298c4  Revert "Fix clock disappearing in the QS panel"  [Sagar Shah]
+165468a3694  BatteryMeterView: show battery while changing when its inside icon  [Sagar Shah]
+6e98746335c  Expose screen pinning dialog background and text color  [Sagar Shah]
+bd3b2a72dfd  Show 3G data icon for TD-SCDMA network type  [Sagar Shah]
+4ec6f30aa2f  WifiTile: Avoid NPE during boot phase  [Sagar Shah]
+51e0012bb3a  NtpTrustedTime: Refresh NTP server from resources before requesting time  [Sagar Shah]
+4908df4d255  BatteryMeterView: dont forceshow battery percent when its inside battery  [Sagar Shah]
+386cd8180e3  Fix clock disappearing in the QS panel  [Sagar Shah]
+0c0f1e391f8  BluetoothTile: Avoid NPE during boot up phase  [Sagar Shah]
+672e6d159da  DndTile: Avoid NPE during boot phase  [Sagar Shah]
+3cac3d672b9  Fix BatteryManager.getIntProperty returns 0 as invalid value.  [Sagar Shah]
+baa684093ce  Handle Backup onUnlockUser on fg thread  [Sagar Shah]
+c3675250480  SystemUI: No Signal bar displays for a moment in UI after Bootup  [Sagar Shah]
+049d6302f7e  TunerService: Prevent NPE with tunable  [Sagar Shah]
+7883bdd40de  SystemUI: properly adjust statusbar height on rotate as necessary  [Sagar Shah]
+6401645c454  base: audioservice: Set BT_SCO status  [Sagar Shah]
+4cddc884b56  BatteryMeterDrawable: add square style (1/2)  [Sagar Shah]
+59399d420ac  Hidden battery style: fixes and improvements  [Sagar Shah]
+2e0b728ba69  BatteryMeterDrawable: add hidden option  [Sagar Shah]
+799af0d46e5  Fix right padding when using Text style  [Sagar Shah]
+1a31ef392ca  BatteryMeterDrawable: add text style  [Sagar Shah]
+1173a70b28a  BatteryMeterDrawable: add dotted circle style  [Sagar Shah]
+993a0c76d0a  BatteryMeterDrawable: add battery styles  [Sagar Shah]
+9ea1ddb8c3b  SystemUI: Implement battery percent styles  [Sagar Shah]
+c644dd971f6  frameworks/base: disable warning about mLineageBatteryLights not being ready  [Sagar Shah]
+702e130c0dd  Adjust paddings with Clock - Move logo above clock - Add padding for logo - Reduce the padding of clock to 3dp  [Sagar Shah]
+8963b0778e1  Clock: Fix crash in formatted string with date on right  [Sagar Shah]
+4c8f2e392fd  Clock customization: more improvements  [Sagar Shah]
+8ccaa3604be  Clock code performance improvements  [Sagar Shah]
+026903674e7  Status bar left/right clock customizations [1/2]  [Sagar Shah]
+38a8fb28933  Revert "Frameworks: Statusbar clock customizations (1/2)"  [Sagar Shah]
+   * manifest/
+d166f37  Add Cosmic sepolicy  [Sagar Shah]
+   * packages/apps/Galaxy/
+8106288  galaxy: buttons: Change variable 'value' to 'newValue'  [Sagar Shah]
+42ee198  galaxy: Add missing string  [Sagar Shah]
+a608f1d  BatteryMeterDrawable: add square style (2/2)  [Sagar Shah]
+0aee8a0  Galaxy: Add battery styles and battery percent settings  [Sagar Shah]
+49f9d60  Galaxy: Merge Buttons and VolumeRocker fragments  [Sagar Shah]
+248d571  [DO NOT MERGE] Sync statusbar clock customization with framework  [Sagar Shah]
+   * packages/apps/Settings/
+345d52576a  Settings: Remove battery percentage switch in battery settings  [Sagar Shah]
+   * system/sepolicy/
+d23c1b57  Revert "sepolicy: update policies for sudaemon on O"  [Sagar Shah]
+053f21fa  Revert "sepolicy: add sudaemon to ignore list"  [Sagar Shah]
+4664bafd  Revert "sepolicy: Allow recovery to write to rootfs"  [Sagar Shah]
+35f2565a  Revert "sepolicy: Conditionally restore support for legacy f_adb interface"  [Sagar Shah]
+75f0f602  sepolicy: Allow recovery to write to rootfs  [Sagar Shah]
+35ab21b7  Revert "sepolicy: Fix up exfat and ntfs support"  [Sagar Shah]
+089a776a  Revert "sepolicy: Add missing exfat and fuseblk types"  [Sagar Shah]
+006ab872  add sload_f2fs permission  [Sagar Shah]
+856fb891  make_f2fs: grant rw to vold  [Sagar Shah]
+d2624259  Allow e2fs to format cache  [Sagar Shah]
+8bd5ed4f  Allow e2fs to rw devpts  [Sagar Shah]
+a9d5fdf3  sepolicy: add sudaemon to ignore list  [Sagar Shah]
+b6f5ebda  sepolicy: update policies for sudaemon on O  [Sagar Shah]
+f85d8e20  sepolicy: Allow su by apps on userdebug_or_eng  [Sagar Shah]
+6cae1c8c  sepolicy: We need to declare before referencing  [Sagar Shah]
+edf8ede9  sepolicy: Add missing exfat and fuseblk types  [Sagar Shah]
+da7f6012  treble sepolicy tests: Workaround /sbin services labels  [Sagar Shah]
+f4a2c9c7  sepolicy: Fix up exfat and ntfs support  [Sagar Shah]
+30fe1ec0  sepolicy: Ignore custom lineage additions  [Sagar Shah]
+   * vendor/cos/
+09a648f  vendor: Add TARGET_OMX_LEGACY_RESCALING flag  [Sagar Shah]
+bb0ed03  soong: Add QTI_flac_decoder config  [Sagar Shah]
+a6fcf2c   soong: Add Qcom_bsp_legacy config  [Sagar Shah]
+48ea278  soong: Add Cant_reallocate_omx_buffers config  [Sagar Shah]
+bc29883  soong: Rename our android package to android_cosmic  [Sagar Shah]
+226b9c5  vendor/cos: Expose pathmaps to soong  [Sagar Shah]
+ce72f8c  vendor/cos: Add qcom board flags to soong  [Sagar Shah]
+c6d6643  soong: handle qcom audio/display/media paths  [Sagar Shah]
+5b51fc0  soong_config: Add LIBART_IMG_BASE variable  [Sagar Shah]
+3ac25e6  soong: add new soong variable BoardUsesQTIHardware  [Sagar Shah]
+c9df893  soong_config: Add TARGET_USES_MEDIA_EXTENSIONS variable  [Sagar Shah]
+64f6246  soong_config: Add TARGET_HAS_LEGACY_CAMERA_HAL1 variable  [Sagar Shah]
+e3f9f38  Remove sepolicy - Move it to device_cosmic_sepolicy  [Sagar Shah]
+ae0eeba  cosmic: Sort soong variables and configurations  [Sagar Shah]
+b2a0f97  soong: replace space with colon on TARGET_LD_SHIM_LIBS  [Sagar Shah]
+025b801  cosmic: soong: Add var for linker shim libs  [Sagar Shah]
+0fa3593  soong_config: Add TARGET_USES_QCOM_BSP_LEGACY  [Sagar Shah]
+fa13850  cosmic: Add TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY variable handling  [Sagar Shah]
+09d3d82  soong_config: Add TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS  [Sagar Shah]
+9d5380a  build: soong: put cosmic variables in the "Cosmic" struct  [Sagar Shah]
+430a425  cosmic: add soong bits for boardflags  [Sagar Shah]
+   * vendor/ota/
+fa9d917  OTA: update potter (13/03/2018) (#106)  [Sagar Shah]
+
+====================
      03-13-2018
 ====================
 
-   * hardware/cosmic/interfaces/
-cd817d4  Revert "cosmic/interfaces: power: Add lineage HIDL HAL interface"  [sandyorton7]
+   * device/motorola/potter/
+40362dd  potter: update trim properties from stock  [GtrCraft]
+375f216  potter: enable radio power save  [GtrCraft]
+580c5cf  potter: Fix DTV module path  [GtrCraft]
+ba73b5e  update autobrightness values  [GtrCraft]
 
 ====================
      03-12-2018
 ====================
 
-   * device/qcom/sepolicy/
-5ac8686  Revert "sepolicy: Remove definition and labelling of sf_lcd_density_prop"  [sandyorton7]
    * frameworks/base/
 251df236297  Revert "OMS: Only allow trusted overlays to be registered."  [Sebastian]
    * packages/apps/Settings/
@@ -55,6 +280,8 @@ c3af3f481  Revert "msm8974: deprecate msm8974"  [razorloves]
      03-09-2018
 ====================
 
+   * device/qcom/sepolicy/
+eaf3be5  apq8084: kill qca1530 policy  [Corinna Vinschen]
    * packages/apps/Galaxy/
 b1f9b68  Fix Chinese Translate Error (#13)  [Sagar Shah]
 
@@ -62,8 +289,6 @@ b1f9b68  Fix Chinese Translate Error (#13)  [Sagar Shah]
      03-08-2018
 ====================
 
-   * frameworks/base/
-00417d48b31  Merge tag 'android-8.1.0_r15' of https://android.googlesource.com/platform/frameworks/base into oreo-mr1  [Sagar Shah]
 
 ====================
      03-07-2018
@@ -73,6 +298,8 @@ b1f9b68  Fix Chinese Translate Error (#13)  [Sagar Shah]
 df2c51fac  Merge tag 'android-8.1.0_r15' into oreo-mr1  [Sebastian]
    * frameworks/av/
 4090ff2e3  Merge tag 'android-8.1.0_r15' into oreo-mr1  [Sebastian]
+   * frameworks/base/
+00417d48b31  Merge tag 'android-8.1.0_r15' of https://android.googlesource.com/platform/frameworks/base into oreo-mr1  [Sagar Shah]
    * manifest/
 0a1c8aa  Merge branch 'android-8.1.0_r15'  [Sebastian]
    * packages/apps/Settings/
@@ -84,8 +311,6 @@ df2c51fac  Merge tag 'android-8.1.0_r15' into oreo-mr1  [Sebastian]
      03-06-2018
 ====================
 
-   * hardware/cosmic/interfaces/
-80f26bf  cosmic/interfaces: power: Add lineage HIDL HAL interface  [Sebastian]
    * hardware/qcom/audio-caf/msm8996/
 b755dfd4  hal: switch audio_extn_set_parameters and amplifier_set_parameters  [codeworkx]
    * vendor/ota/
@@ -97,144 +322,8 @@ b755dfd4  hal: switch audio_extn_set_parameters and amplifier_set_parameters  [c
 
    * device/motorola/potter/
 64fd3e4  potter: Use Pixel build fingerprint to bypass safetynet  [GtrCraft]
-
-====================
-     03-04-2018
-====================
-
-   * frameworks/base/
-ead394f1b67  BatteryService: add turbo power charging support  [Sebastian]
-   * hardware/qcom/audio-caf/msm8952/
-7b486fef  audio: configs: update policy configuration to fix vts failure  [Ethan Chen]
-f8f9a84e  hal: fix failure in running VtsHalAudioV2_0Target module  [Ethan Chen]
-e657be2f  mm-audio: aenc: Fix VTS failures for encoders  [Ethan Chen]
-297e11f3  hal: Fix failure in VtsHalAudioV2_0Target test due to spkr protection  [Ethan Chen]
-f6aa85b3  hal: Update prefixes for audio system properties  [Ethan Chen]
-1ac3f4ea  audio: Fix msm8952-snd-card-mtp support  [Ethan Chen]
-25111ae1  hal: Clean up compilation warnings  [Ethan Chen]
-c3a1fbf0  hal: Fix voice call recording  [Ethan Chen]
-ab524f1c  hal: Support the audio amplifier hook  [Ethan Chen]
-9b068339  hal: Don't try to record using 3-mic unless we mean it  [Ethan Chen]
-c9f39b71  audio: Extend platform parser to allow device name aliasing  [Ethan Chen]
-f701b2e3  audio: Return ENODATA when position is failed to be retreived  [Ethan Chen]
-a68b3d9a  hal: configs: effects: update conf & lib paths  [Ethan Chen]
-18769b02  hal: audio-test: Move omx tests mm-audio-internal  [Ethan Chen]
-ced45bb2  audio: Only allow non-legacy HAL  [Ethan Chen]
-c338cd60  audio: Use    * pathmap  [Ethan Chen]
-   * hardware/qcom/audio-caf/msm8998/
-33c6c64d  hal: switch audio_extn_set_parameters and amplifier_set_parameters  [codeworkx]
-f19eb03b  hal: Support the audio amplifier hook  [codeworkx]
-   * hardware/qcom/display-caf/msm8952/
-6e7faf655  Merge remote-tracking branch 'caf/LA.BR.1.3.7_rb1.9' into lineage-15.1-caf-8952  [Ethan Chen]
-   * hardware/qcom/media-caf/msm8952/
-88d4d3adc  Merge remote-tracking branch 'caf/LA.BR.1.3.7_rb1.9' into lineage-15.1-caf-8952  [Ethan Chen]
-
-====================
-     03-03-2018
-====================
-
-   * vendor/ota/
-b70fc73  Update potter (02/03/2018) (#104)  [Sagar Shah]
-d7ce8d9  OTA: Update z2_plus (02/03/2018)  [Sagar Shah]
-
-====================
-     03-02-2018
-====================
-
-   * device/motorola/potter/
-1b289b5  potter: label mmcblk0p35 as metadata_block_device  [GtrCraft]
-   * kernel/motorola/msm8953/
-1bb41436efa  Linux 3.18.97  [Faiyaz Sheth]
-927da6ce539  ASN.1: fix out-of-bounds read when parsing indefinite length item  [Faiyaz Sheth]
-5cd55b77cb1  usb: gadget: f_fs: Process all descriptors during bind  [Faiyaz Sheth]
-f8dad2eca82  usb: dwc3: gadget: Set maxpacket size for ep0 IN  [Faiyaz Sheth]
-955446ed68e  arm64: Disable unhandled signal log messages by default  [Faiyaz Sheth]
-33c3ded6c2e  irqchip/gic-v3: Use wmb() instead of smb_wmb() in gic_raise_softirq()  [Faiyaz Sheth]
-e0fef557893  x86/oprofile: Fix bogus GCC-8 warning in nmi_setup()  [Faiyaz Sheth]
-1fe8b17ecdd  iio: adis_lib: Initialize trigger before requesting interrupt  [Faiyaz Sheth]
-bf7ee0dd9c3  iio: buffer: check if a buffer has been set up when poll is called  [Faiyaz Sheth]
-5e2e719d5c5  cfg80211: fix cfg80211_beacon_dup  [Faiyaz Sheth]
-59096371464  scsi: ibmvfc: fix misdefined reserved field in ibmvfc_fcp_rsp_info  [Faiyaz Sheth]
-1543686e657  PCI: keystone: Fix interrupt-controller-node lookup  [Faiyaz Sheth]
-cfb35de38ad  netfilter: drop outermost socket lock in getsockopt()  [Faiyaz Sheth]
-11047a417be  Linux 3.18.96  [Faiyaz Sheth]
-f701e8ae5e5  crypto: s5p-sss - Fix kernel Oops in AES-ECB mode  [Faiyaz Sheth]
-0ecbeae1e11  KVM: async_pf: Fix #DF due to inject "Page not Present" and "Page Ready" exceptions simultaneously  [Faiyaz Sheth]
-c0aeead987b  hippi: Fix a Fix a possible sleep-in-atomic bug in rr_close  [Faiyaz Sheth]
-906e6f7de35  xen: XEN_ACPI_PROCESSOR is Dom0-only  [Faiyaz Sheth]
-c2a6275a469  x86/mm/kmmio: Fix mmiotrace for page unaligned addresses  [Faiyaz Sheth]
-55d9126c9a7  mm/early_ioremap: Fix boot hang with earlyprintk=efi,keep  [Faiyaz Sheth]
-027dfae7442  dmaengine: jz4740: disable/unprepare clk if probe fails  [Faiyaz Sheth]
-313d6378bca  xfrm: Fix stack-out-of-bounds with misconfigured transport mode policies.  [Faiyaz Sheth]
-672a262ca03  spi: sun4i: disable clocks in the remove function  [Faiyaz Sheth]
-348dc93c3c4  509: fix printing uninitialized stack memory when OID is empty  [Faiyaz Sheth]
-5cd216b24da  btrfs: Fix possible off-by-one in btrfs_search_path_in_tree  [Faiyaz Sheth]
-fdbeb9b9aab  net_sched: red: Avoid illegal values  [Faiyaz Sheth]
-5807ac52752  net_sched: red: Avoid devision by zero  [Faiyaz Sheth]
-372151b900a  gianfar: fix a flooded alignment reports because of padding issue.  [Faiyaz Sheth]
-0608283ebcf  s390/dasd: prevent prefix I/O error  [Faiyaz Sheth]
-0acc1575371  powerpc/perf: Fix oops when grouping different pmu events  [Faiyaz Sheth]
-2ddea2d5b15  scripts/kernel-doc: Don't fail with status != 0 if error encountered with -none  [Faiyaz Sheth]
-b1715a25579  media: s5k6aa: describe some function parameters  [Faiyaz Sheth]
-11ec9d41063  perf bench numa: Fixup discontiguous/sparse numa nodes  [Faiyaz Sheth]
-6959c939ea3  perf top: Fix window dimensions change handling  [Faiyaz Sheth]
-8c5e104ddd1  ARM: dts: am4372: Correct the interrupts_properties of McASP  [Faiyaz Sheth]
-a191467ca9f  ARM: AM33xx: PRM: Remove am33xx_pwrdm_read_prev_pwrst function  [Faiyaz Sheth]
-5671430a386  usb: build drivers/usb/common/ when USB_SUPPORT is set  [Faiyaz Sheth]
-ee1cc810d47  usbip: keep usbip_device sockfd state in sync with tcp_socket  [Faiyaz Sheth]
-92cb9419d05  dn_getsockoptdecnet: move nf_{get/set}sockopt outside sock lock  [Faiyaz Sheth]
-7be08844fad  video: fbdev/mmp: add MODULE_LICENSE  [Faiyaz Sheth]
-714dc94f342  ASoC: ux500: add MODULE_LICENSE tag  [Faiyaz Sheth]
-e7368d315a3  selinux: ensure the context is NUL terminated in security_context_to_sid_core()  [Faiyaz Sheth]
-72435427a3f  Provide a function to create a NUL-terminated string from unterminated data  [Faiyaz Sheth]
-45cb3948edd  net: avoid skb_warn_bad_offload on IS_ERR  [Faiyaz Sheth]
-b67f881ebab  netfilter: xt_RATEEST: acquire xt_rateest_mutex for hash insert  [Faiyaz Sheth]
-ed20c3a7f3a  netfilter: on sockopt() acquire sock lock only in the required scope  [Faiyaz Sheth]
-820ecfca1ce  netfilter: ipt_CLUSTERIP: fix out-of-bounds accesses in clusterip_tg_check()  [Faiyaz Sheth]
-4620a3d928b  netfilter: x_tables: avoid out-of-bounds reads in xt_request_find_{match|target}  [Faiyaz Sheth]
-bcc75ada4e6  netfilter: x_tables: fix int overflow in xt_alloc_table_info()  [Faiyaz Sheth]
-729b5c94cc7  crypto: x86/twofish-3way - Fix %rbp usage  [Faiyaz Sheth]
-d5173781cae  selinux: skip bounded transition processing if the policy isn't loaded  [Faiyaz Sheth]
-b0eeb3e71ec  xfrm: check id proto in validate_tmpl()  [Faiyaz Sheth]
-337bbc9d017  mm,vmscan: Make unregister_shrinker() no-op if register_shrinker() failed.  [Faiyaz Sheth]
-975a6c96528  media: r820t: fix r820t_write_reg for KASAN  [Faiyaz Sheth]
-80df266e1de  ARM: dts: s5pv210: add interrupt-parent for ohci  [Faiyaz Sheth]
-6e8d34fed3f  ALSA: seq: Fix racy pool initializations  [Faiyaz Sheth]
-843939d8b26  Btrfs: fix crash due to not cleaning up tree log block's dirty bits  [Faiyaz Sheth]
-d439fc54cb8  Btrfs: fix deadlock in run_delalloc_nocow  [Faiyaz Sheth]
-fc97d8e7e0d  console/dummy: leave .con_font_get set to NULL  [Faiyaz Sheth]
-b68e88c2902  video: fbdev: atmel_lcdfb: fix display-timings lookup  [Faiyaz Sheth]
-b76f8afa39a  ext4: correct documentation for grpid mount option  [Faiyaz Sheth]
-beb06ca4c5d  ext4: save error to disk in __ext4_grp_locked_error()  [Faiyaz Sheth]
-90ad178e919  drm/radeon: adjust tested variable  [Faiyaz Sheth]
-9c6dd725b09  ALSA: seq: Fix regression by incorrect ioctl_mutex usages  [Faiyaz Sheth]
-2e3602cd06e  arm: spear13xx: Fix spics gpio controller's warning  [Faiyaz Sheth]
-35c7feb0e54  arm: spear13xx: Fix dmas cells  [Faiyaz Sheth]
-c7c7e8581d8  arm: spear600: Add missing interrupt-parent of rtc  [Faiyaz Sheth]
-ab2acdbc2ad  s390: fix handling of -1 in set{,fs}[gu]id16 syscalls  [Faiyaz Sheth]
-f142494127e  PM / devfreq: Propagate error from devfreq_add_device()  [Faiyaz Sheth]
-dae0ca78143  IB/mlx4: Fix incorrectly releasing steerable UD QPs when have only ETH ports  [Faiyaz Sheth]
-
-====================
-     03-01-2018
-====================
-
-   * vendor/ota/
-55ff741  OTA: Update z2_row (28/02/2018)  [Sagar Shah]
-
-====================
-     02-28-2018
-====================
-
-   * build/make/
-6b40db3df  dtbtool: dtbToolCM -> dtbToolLineage  [Kshitij Gupta]
-   * device/motorola/potter/
-3c5ad18  potter: use kernel-based exfat  [GtrCraft]
-   * manifest/
-0f1f525  manifest: Track device_qcom_common from lineage  [Kshitij Gupta]
-   * vendor/cos/
-8019dc3  build: Merge UM platforms into common HALs and disable BSP  [Sagar Shah]
-6ae5686  qcom_target: Commonize UM target HALs  [Sagar Shah]
+   * hardware/cosmic/interfaces/
+80f26bf  cosmic/interfaces: power: Add lineage HIDL HAL interface  [Sebastian]
 
 
   </Changelog>
