@@ -71,11 +71,11 @@ function update_target() {
     git add -A
     git commit -m "OTA: Update $device ($(date -d "$mdate" +'%d/%m/%Y'))"
     echo
-	if [[ "$COS_BIWEEKLY" == true ]]; then
-	  git push https://${GUSER}:${GPASS}@github.com/${GREPO} -f
-	else
+    if [[ "$COS_BIWEEKLY" == true ]]; then
+      git push https://${GUSER}:${GPASS}@github.com/${GREPO} -f
+    else
       echo "Please push the commit and open a PR."
-	fi
+    fi
   else
     echo "Device is not official."
   fi
