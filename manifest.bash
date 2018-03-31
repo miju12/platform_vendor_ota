@@ -19,15 +19,15 @@ function write_xml() {
 }
 
 function update_target() {
-  if [ "$COS_RELEASE" == true ]; then
+  if [[ "$COS_RELEASE" == true ]]; then
 
     for var in "$@"
     do
-      if [ "$var" == "-S" ]; then
+      if [[ "$var" == "-S" ]]; then
         GPG_SIGN=true
-      elif [ "$var" == "-d" ]; then
+      elif [[ "$var" == "-d" ]]; then
         CUSTOM_DATE=true
-      elif [ "$var" == "-u" ]; then
+      elif [[ "$var" == "-u" ]]; then
         CUSTOM_URL=true
       fi
     done
@@ -36,14 +36,14 @@ function update_target() {
     device=$(echo $TARGET_PRODUCT | cut -d _ -f 2,3)
     android="8.1.0"
     product=Cosmic-OS_${device}_${android}
-    if [ "$CUSTOM_DATE" == true ]; then
+    if [[ "$CUSTOM_DATE" == true ]]; then
       printf 'Enter date in format YYYYMMDD: '
       read -r mdate
       date=$(date -d "$mdate" +'%Y%m%d'); 
     else
       date=$(date +%Y%m%d)
     fi
-    if [ "$CUSTOM_URL" == true ]; then
+    if [[ "$CUSTOM_URL" == true ]]; then
       printf 'Enter Direct URL: '
       read -r durl
       printf 'Enter HTTP URL: '
@@ -63,7 +63,7 @@ function update_target() {
 
     CHANGELOG="$(cat $(gettop)/vendor/ota/changelogs/${version}.txt)"
 
-    if [ -z "$MAINTAINER" ]; then
+    if [[ -z "$MAINTAINER" ]]; then
       echo "Who are you?"
       read MAINTAINER
       echo "Hello ${MAINTAINER}!"
@@ -71,14 +71,14 @@ function update_target() {
     
     write_xml > $device.xml
     git add -A
-    if [ "$GPG_SIGN" == true ]; then
+    if [[ "$GPG_SIGN" == true ]]; then
       git commit -S -m "OTA: Update $device ($(date -d "$mdate" +'%d/%m/%Y'))"
        echo
     else
       git commit -m "OTA: Update $device ($(date -d "$mdate" +'%d/%m/%Y'))"
       echo
     fi
-	if [ "$COS_BIWEEKLY" == true ]; then
+	if [[ "$COS_BIWEEKLY" == true ]]; then
 	  git push https://${GUSER}:${GPASS}@github.com/${GREPO} -f
 	else
       echo "Please push the commit and open a PR."
