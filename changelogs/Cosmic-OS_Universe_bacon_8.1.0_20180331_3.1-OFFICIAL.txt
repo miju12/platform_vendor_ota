@@ -1,17 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ROM>
-  <RomName>Cosmic-OS_bacon_8.1.0</RomName>
-  <VersionName><![CDATA[ Cosmic-OS_Universe_bacon_8.1.0_20180331_3.1-OFFICIAL ]]></VersionName>
-  <VersionNumber type="integer">20180331</VersionNumber>
-  <DirectUrl>https://downloads.sourceforge.net/project/cosmic-os/bacon/Cosmic-OS_Universe_bacon_8.1.0_20180331_3.1-OFFICIAL.zip</DirectUrl>
-  <HttpUrl>https://sourceforge.net/projects/cosmic-os/files/bacon</HttpUrl>
-  <Android>8.1.0</Android>
-  <CheckMD5>aa1718fb02f43a6f80a704dee89b5ff2</CheckMD5>
-  <FileSize type="integer">327045736</FileSize>
-  <Developer>Kshitij Gupta (AgentFabulous)</Developer>
-  <WebsiteURL nil="true">cosmic-os.github.io</WebsiteURL>
-  <DonateURL>paypal.me/Cosmic-OS</DonateURL>
-  <Changelog>====================
+====================
      03-31-2018
 ====================
 
@@ -55,5 +42,4 @@ ac80985  camera: Only link and use vendor.qti.hardware.camera.device if specifie
 c42b8fb  Camera: Add support for manual 3A.  [Kshitij Gupta]
 049e7f2  camera: allow device to append camera parameters  [Kshitij Gupta]
 84ee2f6  MediaProfiles: Enhance profiles for extended usecases  [Kshitij Gupta]
-068dae1  libmedia: Add 1440p camcorder quality  [Kshitij Gupta]</Changelog>
-</ROM>
+068dae1  libmedia: Add 1440p camcorder quality  [Kshitij Gupta]
