@@ -23,9 +23,7 @@ function update_target() {
 
     for var in "$@"
     do
-      if [[ "$var" == "-S" ]]; then
-        GPG_SIGN=true
-      elif [[ "$var" == "-d" ]]; then
+      if [[ "$var" == "-d" ]]; then
         CUSTOM_DATE=true
       elif [[ "$var" == "-u" ]]; then
         CUSTOM_URL=true
@@ -71,13 +69,8 @@ function update_target() {
     
     write_xml > $device.xml
     git add -A
-    if [[ "$GPG_SIGN" == true ]]; then
-      git commit -S -m "OTA: Update $device ($(date -d "$mdate" +'%d/%m/%Y'))"
-       echo
-    else
-      git commit -m "OTA: Update $device ($(date -d "$mdate" +'%d/%m/%Y'))"
-      echo
-    fi
+    git commit -m "OTA: Update $device ($(date -d "$mdate" +'%d/%m/%Y'))"
+    echo
 	if [[ "$COS_BIWEEKLY" == true ]]; then
 	  git push https://${GUSER}:${GPASS}@github.com/${GREPO} -f
 	else
