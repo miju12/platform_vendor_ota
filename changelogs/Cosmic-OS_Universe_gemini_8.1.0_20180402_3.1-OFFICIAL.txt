@@ -1,17 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ROM>
-  <RomName>Cosmic-OS_gemini_8.1.0</RomName>
-  <VersionName><![CDATA[ Cosmic-OS_Universe_gemini_8.1.0_20180402_3.1-OFFICIAL ]]></VersionName>
-  <VersionNumber type="integer">20180402</VersionNumber>
-  <DirectUrl>https://downloads.sourceforge.net/project/cosmic-os/gemini/Cosmic-OS_Universe_gemini_8.1.0_20180402_3.1-OFFICIAL.zip</DirectUrl>
-  <HttpUrl>https://sourceforge.net/projects/cosmic-os/files/gemini</HttpUrl>
-  <Android>8.1.0</Android>
-  <CheckMD5>878e2b126f789ee3d14f93813e15bc43</CheckMD5>
-  <FileSize type="integer">504081914</FileSize>
-  <Developer>Sebastian</Developer>
-  <WebsiteURL nil="true">cosmic-os.github.io</WebsiteURL>
-  <DonateURL>paypal.me/Cosmic-OS</DonateURL>
-  <Changelog>====================
+====================
      04-02-2018
 ====================
 
@@ -55,5 +42,4 @@ ca69f4b  Stock Recents icon packs support [2/2]  [Sebastian]
 c442647  Add support force disable sco enhanced sync commands  [Sebastian]
 e30e9d6  Add support for FM vendor operations such as ON/OFF  [Sebastian]
    * system/sepolicy/
-71da2ae  Sepolicy: Fix perfprofd path  [Sagar Shah]</Changelog>
-</ROM>
+71da2ae  Sepolicy: Fix perfprofd path  [Sagar Shah]
