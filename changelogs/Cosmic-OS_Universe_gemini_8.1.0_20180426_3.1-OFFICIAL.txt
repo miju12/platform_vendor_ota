@@ -1,17 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ROM>
-  <RomName>Cosmic-OS_gemini_8.1.0</RomName>
-  <VersionName><![CDATA[ Cosmic-OS_Universe_gemini_8.1.0_20180426_3.1-OFFICIAL ]]></VersionName>
-  <VersionNumber type="integer">20180426</VersionNumber>
-  <DirectUrl>https://downloads.sourceforge.net/project/cosmic-os/gemini/Cosmic-OS_Universe_gemini_8.1.0_20180426_3.1-OFFICIAL.zip</DirectUrl>
-  <HttpUrl>https://sourceforge.net/projects/cosmic-os/files/gemini</HttpUrl>
-  <Android>8.1.0</Android>
-  <CheckMD5>d86db5f8131269d804fda252d07d2217</CheckMD5>
-  <FileSize type="integer">509077874</FileSize>
-  <Developer>Sebastian</Developer>
-  <WebsiteURL nil="true">cosmic-os.github.io</WebsiteURL>
-  <DonateURL>paypal.me/Cosmic-OS</DonateURL>
-  <Changelog>====================
+====================
      04-26-2018
 ====================
 
@@ -55,5 +42,4 @@ a788f38  msm8996-common: Add vendor's public libraries  [Sebastian]
 8d06016  Fix some refresh issues when changing an overlay  [Sagar Shah]
 252aad7  Add DarkIconDispatcher to cosmic logo  [Sagar Shah]
 a1a88e8  Fix QS edit background for our themes  [Sagar Shah]
-287778e  SystemUI: Fix NPE on SlashDrawable  [Sagar Shah]</Changelog>
-</ROM>
+287778e  SystemUI: Fix NPE on SlashDrawable  [Sagar Shah]
