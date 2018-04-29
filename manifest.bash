@@ -12,8 +12,8 @@ function write_xml() {
   echo "  <CheckMD5>"$(md5sum $OUT/$version.zip | awk '{print $1}')"</CheckMD5>"
   echo "  <FileSize type=\"integer\">"$(stat --printf="%s" $OUT/${version}.zip)"</FileSize>"
   echo "  <Developer>$MAINTAINER</Developer>"
-  echo "  <WebsiteURL nil=\"true\">cosmic-os.github.io</WebsiteURL>"
-  echo "  <DonateURL>paypal.me/Cosmic-OS</DonateURL>"
+  echo "  <WebsiteURL nil=\"true\">cosmic-os.org</WebsiteURL>"
+  echo "  <DonateURL>paypal.me/CosmicOS</DonateURL>"
   echo "  <Changelog>$CHANGELOG</Changelog>"
   echo "</ROM>"
 }
