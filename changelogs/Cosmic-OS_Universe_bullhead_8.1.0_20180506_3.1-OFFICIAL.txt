@@ -1,9 +1,39 @@
 ====================
-     05-05-2018
+     05-06-2018
 ====================
 
    * build/make/
-8db710bbd  Revert "Install (vendor|system/vendor)/build.prop always"  [Sagar Shah]
+621d534fa  Revert "Install (vendor|system/vendor)/build.prop always"  [Sagar Shah]
+   * frameworks/av/
+23848f91a  Camera: Add extensions to CameraClient  [Sagar Shah]
+0d5d295ed  Camera: Add null check on mDevice to avoid crash  [Sagar Shah]
+c60e1840c  cameraserver: disable background scheduling of cameraserver  [Sagar Shah]
+2c6a264cb  MediaProfiles: Enhance profiles for extended usecases  [Sagar Shah]
+9b380daee  libmedia: Add 1440p camcorder quality  [Sagar Shah]
+22c28bfc0  video: Add QHD & 2K profile for recorder  [Sagar Shah]
+9237df5e2  CamcorderProfiles: add VGA and 4K-DCI profiles  [Sagar Shah]
+   * frameworks/base/
+01deefe3c2d  its cosmic  [Sagar Shah]
+a1ce49848ae  utils: Introduce FileUtils class  [Sagar Shah]
+   * system/core/
+6c3738be0  Revert "Import COS init"  [Sagar Shah]
+   * vendor/cos/
+cc61b42  vendor: Update our old build script  [Sagar Shah]
+3dbdb83  init: Refactor cos init rc file  [Sagar Shah]
+88d8d3e  vendor: Update misc packages  [Sagar Shah]
+   * vendor/ota/
+11ca26a  OTA: Update z2_plus (06/05/2018)  [Sidharth Soni]
+644ca52  OTA: Update bullhead (06/05/2018)  [Sagar Shah]
+ef05cb3  OTA: Update kenzo (05/05/2018)  [Sebastian]
+
+====================
+     05-05-2018
+====================
+
+   * vendor/samsung/
+92b6c0d  Merge pull request #1 from SamsungGalaxyJ5-2017/lineage-15.1  [GitHub]
+2682b6e  j5y17lte : update RIL  [ananjaser1211]
+5eb0083  j5y17lte : Add fingerprint HAL  [ananjaser1211]
 
 ====================
      05-04-2018
@@ -13,33 +43,3 @@
 ====================
      05-03-2018
 ====================
-
-
-====================
-     05-02-2018
-====================
-
-
-====================
-     05-01-2018
-====================
-
-
-====================
-     04-30-2018
-====================
-
-   * device/qcom/sepolicy/
-3d58db1  sepolicy: Remove sf_lcd_density_prop additions  [Sagar Shah]
-fb03f10  sepolicy: Include cosmic sepolicy  [Sagar Shah]
-
-====================
-     04-29-2018
-====================
-
-   * device/cosmic/sepolicy/
-a16a39d  Revert "sepolicy: suppress denial logspam"  [Sagar Shah]
-e50c9c4  sepolicy: Improve external storage rules  [Sagar Shah]
-   * kernel/samsung/exynos7870/
-a7eb1064741  [SQUASH]Merge Linux Stable 3.18.106  [Abhay Ruparel]
-   * system/sepolicy/
