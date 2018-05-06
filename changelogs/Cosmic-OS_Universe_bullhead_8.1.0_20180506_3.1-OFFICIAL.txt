@@ -1,17 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ROM>
-  <RomName>Cosmic-OS_bullhead_8.1.0</RomName>
-  <VersionName><![CDATA[ Cosmic-OS_Universe_bullhead_8.1.0_20180506_3.1-OFFICIAL ]]></VersionName>
-  <VersionNumber type="integer">20180506</VersionNumber>
-  <DirectUrl>https://downloads.sourceforge.net/project/cosmic-os/bullhead/Cosmic-OS_Universe_bullhead_8.1.0_20180506_3.1-OFFICIAL.zip</DirectUrl>
-  <HttpUrl>https://sourceforge.net/projects/cosmic-os/files/bullhead</HttpUrl>
-  <Android>8.1.0</Android>
-  <CheckMD5></CheckMD5>
-  <FileSize type="integer"></FileSize>
-  <Developer></Developer>
-  <WebsiteURL nil="true">cosmic-os.org</WebsiteURL>
-  <DonateURL>paypal.me/CosmicOS</DonateURL>
-  <Changelog>====================
+====================
      05-05-2018
 ====================
 
@@ -55,5 +42,4 @@ a16a39d  Revert "sepolicy: suppress denial logspam"  [Sagar Shah]
 e50c9c4  sepolicy: Improve external storage rules  [Sagar Shah]
    * kernel/samsung/exynos7870/
 a7eb1064741  [SQUASH]Merge Linux Stable 3.18.106  [Abhay Ruparel]
-   * system/sepolicy/</Changelog>
-</ROM>
+   * system/sepolicy/
