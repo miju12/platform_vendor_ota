@@ -1,17 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ROM>
-  <RomName>Cosmic-OS_bullhead_8.1.0</RomName>
-  <VersionName><![CDATA[ Cosmic-OS_Universe_bullhead_8.1.0_20180507_3.1-OFFICIAL ]]></VersionName>
-  <VersionNumber type="integer">20180507</VersionNumber>
-  <DirectUrl>https://downloads.sourceforge.net/project/cosmic-os/bullhead/Cosmic-OS_Universe_bullhead_8.1.0_20180507_3.1-OFFICIAL.zip</DirectUrl>
-  <HttpUrl>https://sourceforge.net/projects/cosmic-os/files/bullhead</HttpUrl>
-  <Android>8.1.0</Android>
-  <CheckMD5>e025d909b92e26278e40a8dcd8db91b2</CheckMD5>
-  <FileSize type="integer">429180697</FileSize>
-  <Developer>Segor Shah</Developer>
-  <WebsiteURL nil="true">cosmic-os.org</WebsiteURL>
-  <DonateURL>paypal.me/CosmicOS</DonateURL>
-  <Changelog>====================
+====================
      05-07-2018
 ====================
 
@@ -55,5 +42,4 @@ ef05cb3  OTA: Update kenzo (05/05/2018)  [Sebastian]
 
    * vendor/samsung/
 2682b6e  j5y17lte : update RIL  [ananjaser1211]
-5eb0083  j5y17lte : Add fingerprint HAL  [ananjaser1211]</Changelog>
-</ROM>
+5eb0083  j5y17lte : Add fingerprint HAL  [ananjaser1211]
