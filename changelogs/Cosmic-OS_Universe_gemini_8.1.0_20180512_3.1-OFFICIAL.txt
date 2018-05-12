@@ -1,17 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ROM>
-  <RomName>Cosmic-OS_gemini_8.1.0</RomName>
-  <VersionName><![CDATA[ Cosmic-OS_Universe_gemini_8.1.0_20180512_3.1-OFFICIAL ]]></VersionName>
-  <VersionNumber type="integer">20180512</VersionNumber>
-  <DirectUrl>https://downloads.sourceforge.net/project/cosmic-os/gemini/Cosmic-OS_Universe_gemini_8.1.0_20180512_3.1-OFFICIAL.zip</DirectUrl>
-  <HttpUrl>https://sourceforge.net/projects/cosmic-os/files/gemini</HttpUrl>
-  <Android>8.1.0</Android>
-  <CheckMD5>06b574b6186913b12a21b8f5276eeebf</CheckMD5>
-  <FileSize type="integer">509522657</FileSize>
-  <Developer>Sebastian</Developer>
-  <WebsiteURL nil="true">cosmic-os.org</WebsiteURL>
-  <DonateURL>paypal.me/CosmicOS</DonateURL>
-  <Changelog>====================
+====================
      05-12-2018
 ====================
 
@@ -55,5 +42,4 @@ ad6a7a1  msm8996-common: Update blobs for GPS stack  [Sebastian]
    * device/xiaomi/msm8996-common/
 851d28d  msm8996-common: Enforcing  [Sebastian]
 049b045  msm8996-common: sepolicy: Resolve some denials  [Sebastian]
-cea3987  msm8996-common: sepolicy: Updates for EAS  [Sebastian]</Changelog>
-</ROM>
+cea3987  msm8996-common: sepolicy: Updates for EAS  [Sebastian]
