@@ -53,7 +53,7 @@ function update_target() {
     version=$(echo $version | sed -e "s/${version_date}/${date}/g")
     cd $(gettop)/vendor/ota
     git reset --hard HEAD
-    git pull cosmic-os oreo-mr1
+    git pull cosmic-os pulsar-release
     mkdir -p $(gettop)/vendor/ota/changelogs
     touch $(gettop)/vendor/ota/changelogs/${version}.txt
     head -n 45 $OUT/cos_${device}-Changelog.txt > $(gettop)/vendor/ota/changelogs/${version}.txt
