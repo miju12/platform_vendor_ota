@@ -1,17 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ROM>
-  <RomName>Cosmic-OS_gemini_8.1.0</RomName>
-  <VersionName><![CDATA[ Cosmic-OS_Pulsar_gemini_8.1.0_20180616_3.2-OFFICIAL ]]></VersionName>
-  <VersionNumber type="integer">20180616</VersionNumber>
-  <DirectUrl>https://downloads.sourceforge.net/project/cosmic-os/gemini/Cosmic-OS_Pulsar_gemini_8.1.0_20180616_3.2-OFFICIAL.zip</DirectUrl>
-  <HttpUrl>https://sourceforge.net/projects/cosmic-os/files/gemini</HttpUrl>
-  <Android>8.1.0</Android>
-  <CheckMD5>b0fcfb8deb699e0133998c9b0dd5bb7f</CheckMD5>
-  <FileSize type="integer">498604432</FileSize>
-  <Developer>Sebastian</Developer>
-  <WebsiteURL nil="true">cosmic-os.org</WebsiteURL>
-  <DonateURL>paypal.me/CosmicOS</DonateURL>
-  <Changelog>====================
+====================
      06-16-2018
 ====================
 
@@ -54,5 +41,5 @@ fb8e983  msm8996-common: Update vendor properties  [Sebastian]
 4954b1b  msm8996-common: camera: Changes to fix QCameraDisplay compilation issues  [Sebastian]
 83424a9  msm8996-common: Remove unused camera firmware  [Sebastian]
 ae4f851  msm8996-common: Remove cpuset foreground boost  [Sebastian]
-2b05177  msm8996-common: Update blobs for GPS stack  [Sebastian]</Changelog>
-</ROM>
+2b05177  msm8996-common: Update blobs for GPS stack  [Sebastian]
+
