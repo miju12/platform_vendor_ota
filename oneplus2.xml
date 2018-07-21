@@ -1,59 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ROM>
   <RomName>Cosmic-OS_oneplus2_8.1.0</RomName>
-  <VersionName><![CDATA[ Cosmic-OS_Universe_oneplus2_8.1.0_20180401_3.1-OFFICIAL ]]></VersionName>
-  <VersionNumber type="integer">20180401</VersionNumber>
-  <DirectUrl>https://downloads.sourceforge.net/project/cosmic-os/oneplus2/Cosmic-OS_Universe_oneplus2_8.1.0_20180401_3.1-OFFICIAL.zip</DirectUrl>
+  <VersionName><![CDATA[ Cosmic-OS_Pulsar_oneplus2-july-release ]]></VersionName>
+  <VersionNumber type="integer">20180721</VersionNumber>
+  <DirectUrl>https://downloads.sourceforge.net/project/cosmic-os/oneplus2/cosmic-os-official-july.zip</DirectUrl>
   <HttpUrl>https://sourceforge.net/projects/cosmic-os/files/oneplus2</HttpUrl>
   <Android>8.1.0</Android>
-  <CheckMD5>5bca69834c0416fd3411f54cb4b05c3e</CheckMD5>
-  <FileSize type="integer">464716022</FileSize>
+  <CheckMD5>3df091f751f666b47b5ed41eaba5b84f</CheckMD5>
+  <FileSize type="integer">554923477</FileSize>
   <Developer>Sagar Shah</Developer>
-  <WebsiteURL nil="true">cosmic-os.github.io</WebsiteURL>
+  <WebsiteURL>cosmic-os.org</WebsiteURL>
   <DonateURL>paypal.me/Cosmic-OS</DonateURL>
   <Changelog>====================
-     04-01-2018
+     21-07-2018
 ====================
-
-   * device/oneplus/oneplus2/
-c575ec8  oneplus2: dependencies: Don't track my hals  [Sagar Shah]
-7142bab  op2: sepolicy: Address camera daemon denial  [Sagar Shah]
-19b63d3  op2: ENFORCE!  [Sagar Shah]
-b91d20b  op2: rewrite sepolicy for O  [Sagar Shah]
-21e9b18  op2: Add core_ctl props  [Sagar Shah]
-5d57379  op2: nuke ipacm-diag  [Sagar Shah]
-2f8b444  oneplus2: Convert audio_effect.conf to audio_effects.xml  [Sagar Shah]
-acdf8b9  op2: copy audio configs to vendor  [Sagar Shah]
-86e30de  Oneplus2: Update Power Configuration  [Sagar Shah]
-ee794ef  op2: update core_ctl  [Sagar Shah]
-d6df708  oneplus2: update cpu configuration  [Sagar Shah]
-f151b88  op2: remove duplicate props  [Sagar Shah]
-2e7e3aa  op2: audio: Add speaker + bt-sco combo device  [Sagar Shah]
-087a47d  op2: bluetooth: Force disable sco enhanced sync commands  [Sagar Shah]
-   * device/oneplus/oneplus3/
-75a27f0  op3: camera: shim missing symbols  [Sagar Shah]
-   * external/icu/
-654836f95  Fix compilation error on Ubuntu 18.04  [Sagar Shah]
-069ed55e6  Updated icu bin  [Sagar Shah]
-0a89b8f29  Update compilation dependencies  [Sagar Shah]
-a932193d3  DO not translate byte units,please!  [Sagar Shah]
-   * hardware/qcom/media-caf/msm8952/
-b349c61d0  fix circular dependency libnativewindow <-> libui  [Christian Oder]
-15e38737f  media: Adjust for new header Android.bp requirements  [Christian Oder]
-
-====================
-     03-31-2018
-====================
-
-   * build/make/
-79c1a81ed  kill vendor module checks completely  [Sagar Shah]
-   * frameworks/base/
-7168bc44522  Revert "Revert "OMS: Only allow trusted overlays to be registered.""  [Sagar Shah]
-2ecfaf69b56  Fix mismerge at https://github.com/Cosmic-OS/platform_frameworks_base/commit/2c6fc458300ee43d2fd420623d3d11b549496138  [Sagar Shah]
-46500ad8ae8  base: lock: Allow skipping secure discard of Screen Lock keys  [Sagar Shah]
-2c6fc458300  SystemUI: Reload more assets on overlay change  [Sagar Shah]
-27a29f4b0c3  base: Introduce SubstratumService  [Sagar Shah]
-bcae406be5c  OMS: Add back overlay modified callback implementation  [Sagar Shah]
-97a686dfdf9  OMS: StrictMode and files under /data/system/theme/  [Sagar Shah]
-51f536c9ec3  Hold "volume up" during boot to disable all overlays  [Sagar Shah]</Changelog>
+July release of Cosmic-OS. For full changelogs check github
+This update includes:
+Fixes for alert slider</Changelog>
 </ROM>
