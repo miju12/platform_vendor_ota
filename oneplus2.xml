@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ROM>
   <RomName>Cosmic-OS_oneplus2_8.1.0</RomName>
-  <VersionName><![CDATA[ Cosmic-OS_Pulsar_oneplus2-july-release ]]></VersionName>
-  <VersionNumber type="integer">20180721</VersionNumber>
-  <DirectUrl>https://downloads.sourceforge.net/project/cosmic-os/oneplus2/cosmic-os-official-july.zip</DirectUrl>
+  <VersionName><![CDATA[ Cosmic-OS_Pulsar_oneplus2-july-release-patch1 ]]></VersionName>
+  <VersionNumber type="integer">20180729</VersionNumber>
+  <DirectUrl>https://downloads.sourceforge.net/project/cosmic-os/oneplus2/cosmic-os-july-release-patch1.zip</DirectUrl>
   <HttpUrl>https://sourceforge.net/projects/cosmic-os/files/oneplus2</HttpUrl>
   <Android>8.1.0</Android>
-  <CheckMD5>3df091f751f666b47b5ed41eaba5b84f</CheckMD5>
-  <FileSize type="integer">554923477</FileSize>
+  <CheckMD5>20001ab0644f6fc88f3dc74043050e65</CheckMD5>
+  <FileSize type="integer">557411834</FileSize>
   <Developer>Sagar Shah</Developer>
   <WebsiteURL>cosmic-os.org</WebsiteURL>
   <DonateURL>paypal.me/Cosmic-OS</DonateURL>
-  <Changelog>====================
-     21-07-2018
-====================
-July release of Cosmic-OS. For full changelogs check github
-This update includes:
-Fixes for alert slider</Changelog>
+  <Changelog>
+	  Do NOT flash this build before reading the XDA announcement 
+	  Bugfixing release. Check github for full changelog
+	  added vendor partition
+	  ROM will now force encryption at boot
+	  improved boot time
+  </Changelog>
 </ROM>
