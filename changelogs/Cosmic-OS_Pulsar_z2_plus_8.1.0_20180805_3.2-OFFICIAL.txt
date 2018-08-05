@@ -1,17 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ROM>
-  <RomName>Cosmic-OS_z2_plus_8.1.0</RomName>
-  <VersionName><![CDATA[ Cosmic-OS_Pulsar_z2_plus_8.1.0_20180805_3.2-OFFICIAL ]]></VersionName>
-  <VersionNumber type="integer">20180805</VersionNumber>
-  <DirectUrl>https://downloads.sourceforge.net/project/cosmic-os/z2_plus/Cosmic-OS_Pulsar_z2_plus_8.1.0_20180805_3.2-OFFICIAL.zip</DirectUrl>
-  <HttpUrl>https://sourceforge.net/projects/cosmic-os/files/z2_plus</HttpUrl>
-  <Android>8.1.0</Android>
-  <CheckMD5>bc1f90af2bd8f7d80b9e6ad753e6d280</CheckMD5>
-  <FileSize type="integer">523773471</FileSize>
-  <Developer>miju12</Developer>
-  <WebsiteURL nil="true">cosmic-os.org</WebsiteURL>
-  <DonateURL>paypal.me/CosmicOS</DonateURL>
-  <Changelog>====================
+====================
      08-05-2018
 ====================
 
@@ -55,5 +42,4 @@ ce19894  oneplus2: fix maintainer name  [anupritaisno1]
      07-30-2018
 ====================
 
-   * hardware/qcom/audio-caf/msm8998/</Changelog>
-</ROM>
+   * hardware/qcom/audio-caf/msm8998/
